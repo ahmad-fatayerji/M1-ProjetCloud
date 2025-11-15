@@ -7,7 +7,7 @@ import os
 import argparse
 from typing import List, Tuple
 
-# Concurrency levels required by Exercice 1
+# Concurrency levels 
 DEFAULT_PARAMS = [1, 10, 20, 50, 100, 1000]
 
 
