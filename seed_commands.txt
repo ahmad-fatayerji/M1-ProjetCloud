@@ -1,5 +1,0 @@
-python seed.py --users 1000 --posts 10000 --follows-min 20 --follows-max 20
-
-python seed.py --users 1000 --posts 100000 --follows-min 20 --follows-max 20
-
-python seed.py --users 1000 --posts 1000000 --follows-min 20 --follows-max 20
