@@ -2,7 +2,7 @@ from google.cloud import datastore
 
 client = datastore.Client()
 
-KIND_LIST = ["User", "Post", "Follow"]
+KIND_LIST = ["User", "Post"]
 
 for kind in KIND_LIST:
     print(f"Deleting all entities of kind: {kind}")
