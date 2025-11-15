@@ -2,26 +2,40 @@
 
 py -3.12 .\bench_conc.py --base-url https://cours-cloud-473712.ew.r.appspot.com --user-prefix user --max-users 1000
 
-------------------------------------------------------------------------------------------------------------------------------------------------
+
 
 ------------Commands for bench_post.py-----------------------------------------------------------------------------------------------------------
 
 For 10 posts/user:
 
 python seed.py --users 1000 --posts 10000 --follows-min 20 --follows-max 20
-
 py -3.12 .\bench_post.py --base-url https://cours-cloud-473712.ew.r.appspot.com --params 10
 
 For 100 posts/user:
 
 python seed.py --users 1000 --posts 100000 --follows-min 20 --follows-max 20
-
 py -3.12 .\bench_post.py --base-url https://cours-cloud-473712.ew.r.appspot.com --params 100
 
 For 1000 posts/user:
 
 python seed.py --users 1000 --posts 1000000 --follows-min 20 --follows-max 20
-
 py -3.12 .\bench_post.py --base-url https://cours-cloud-473712.ew.r.appspot.com --params 1000
+
+------------Commands for bench_fanout.py-----------------------------------------------------------------------------------------------------------
+
+For 10 followees per user:
+
+python seed.py --users 1000 --posts 100000 --follows-min 10 --follows-max 10
+py -3.12 .\bench_fanout.py --base-url https://cours-cloud-473712.ew.r.appspot.com --params 10
+
+For 50 followees per user:
+
+python seed.py --users 1000 --posts 100000 --follows-min 50 --follows-max 50
+py -3.12 .\bench_fanout.py --base-url https://cours-cloud-473712.ew.r.appspot.com --params 50
+
+For 100 followees per user:
+
+python seed.py --users 1000 --posts 100000 --follows-min 100 --follows-max 100
+py -3.12 .\bench_fanout.py --base-url https://cours-cloud-473712.ew.r.appspot.com --params 100
 
 ------------------------------------------------------------------------------------------------------------------------------------------------
