@@ -4,6 +4,10 @@ Command to recreate index :
 
 gcloud datastore indexes create index.yaml || gcloud app deploy index.yaml
 
+Command to check index status :
+
+gcloud datastore indexes list
+
 ------------------------------------------------------------------------------------------------------------------------------------------------
 
 Command to delete the datastore (to run on google cloud)
