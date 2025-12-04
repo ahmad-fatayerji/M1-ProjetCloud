@@ -111,6 +111,7 @@ def main():
     if out_dir and not os.path.exists(out_dir):
         os.makedirs(out_dir, exist_ok=True)
 
+    # Append if file already exists, otherwise create and write header
     write_header = not os.path.exists(args.out)
     mode = "a" if not write_header else "w"
 
