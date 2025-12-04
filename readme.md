@@ -45,7 +45,7 @@ Test avec 10, 50, 100 followees par utilisateur.
 
 ## Conclusion
 
-En comparant les trois benchmarks, on observe que la concurrence et le nombre de posts ont un impact relativement modéré sur les temps de réponse : passer de 1 à 1000 utilisateurs simultanés multiplie le temps par ~27, et augmenter de 10 à 1000 posts/utilisateur le multiplie par ~12. En revanche, le **nombre de followees (fanout)** est le facteur le plus critique : passer de 10 à 100 followees multiplie le temps de réponse par **~41**, atteignant plus de 13 secondes par requête. Cela s'explique par le fait que chaque followee supplémentaire nécessite des requêtes additionnelles au Datastore pour récupérer ses posts. Le fanout est donc le principal goulot d'étranglement de l'application TinyInsta.
+En comparant les trois benchmarks, on observe que la concurrence et le nombre de posts ont un impact relativement modéré sur les temps de réponse : passer de 1 à 1000 utilisateurs simultanés multiplie le temps par ~27, et le nombre de posts n'a quasiment aucun impact. En revanche, le **nombre de followees (fanout)** est le facteur le plus critique : passer de 10 à 100 followees multiplie le temps de réponse par **~41**, atteignant plus de 13 secondes par requête. Cela s'explique par le fait que chaque followee supplémentaire nécessite des requêtes additionnelles au Datastore pour récupérer ses posts. Le fanout est donc le principal goulot d'étranglement de l'application TinyInsta.
 
 ## Structure du projet
 
