@@ -41,7 +41,7 @@ Test avec 10, 50, 100 followees par utilisateur.
 
 ## Environnement de test
 
-> **Note** : Tous les tests ont été réalisés dans des conditions identiques (même machine, même connexion réseau) afin de garantir la reproductibilité et la comparabilité des résultats. Avant chaque série de mesures, des requêtes de warm-up ont été effectuées pour éviter les effets de cold start (démarrage des instances App Engine, mise en cache, etc.).
+> **Note** : Tous les tests ont été réalisés dans des conditions identiques (même machine, même connexion réseau) afin de garantir la reproductibilité et la comparabilité des résultats. Avant chaque série de mesures, des requêtes de warm-up ont été effectuées pour éviter les effets de cold start.
 
 ## Conclusion
 
